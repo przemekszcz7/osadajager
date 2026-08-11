@@ -1,0 +1,6 @@
+{
+  "name": "Osada Jager",
+  "description": "Osada Jager — dwa nowoczesne domki w Bańskiej Wyżnej z widokiem na Tatry. Jacuzzi, sauna, przyjazne rodzinom. Tel: 787 361 760",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,1616 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osada Jager – Domki w Górach · Podhale, Tatry</title>
+    <meta name="description" content="Osada Jager — dwa nowoczesne domki w Bańskiej Wyżnej z widokiem na Tatry. Jacuzzi, sauna, przyjazne rodzinom. Tel: 787 361 760" />
+    <link rel="icon" type="image/jpeg" href="https://i.ibb.co/jZvWZLLP/471683524-122107848086698509-4073205646031298830-n.jpg" />
+    
+    <!-- Resource Hints & Preloads -->
+    <link rel="dns-prefetch" href="https://i.ibb.co">
+    <link rel="preconnect" href="https://i.ibb.co" crossorigin>
+    <link rel="preload" as="image" href="https://i.ibb.co/8DNtWvsW/728427444-4038707596263376-4627458785522903135-n.jpg" fetchpriority="high">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Caveat:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <style>
+      /* --- COLOR PALETTE & VARIABLES --- */
+      :root {
+        --bg-greige: #EFE6E1;
+        --bg-surface: #FAF6F2;
+        --olive-black: #2E2A1E;
+        --olive-surface: #3A3526;
+        --olive-light: #5C543C;
+        --gold-accent: #B89860;
+        --color-muted: #8A8270;
+        --color-text: #221E14;
+        --color-border: #E0D8CA;
+
+        --font-heading: 'Cormorant Garamond', Georgia, serif;
+        --font-body: 'Barlow', -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-accent: 'Caveat', cursive;
+      }
+
+      /* --- RESET & BASE STYLES --- */
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+
+      body {
+        background-color: var(--bg-greige);
+        color: var(--color-text);
+        font-family: var(--font-body);
+        font-weight: 400;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      /* --- TYPOGRAPHY --- */
+      h1, h2, h3, h4 {
+        font-family: var(--font-heading);
+        font-weight: 600;
+        line-height: 1.2;
+        color: var(--olive-black);
+      }
+
+      h1 {
+        font-size: clamp(3rem, 6vw, 5rem);
+        letter-spacing: -0.02em;
+      }
+
+      h2 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      .accent-caveat {
+        font-family: var(--font-accent);
+        color: var(--gold-accent);
+        font-weight: 600;
+      }
+
+      .section-subtitle {
+        text-align: center;
+        font-family: var(--font-accent);
+        font-size: 1.75rem;
+        color: var(--gold-accent);
+        margin-top: 4px;
+      }
+
+      .text-muted {
+        color: var(--color-muted);
+      }
+
+      /* --- SPATIAL RULES & CONTAINERS --- */
+      .container {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      section {
+        padding: 92px 0;
+        position: relative;
+      }
+
+      .bg-surface {
+        background-color: var(--bg-surface);
+      }
+
+      .bg-olive-dark {
+        background-color: var(--olive-black);
+        color: var(--bg-surface);
+      }
+
+      .bg-olive-dark h2, 
+      .bg-olive-dark h3 {
+        color: #FFFFFF;
+      }
+
+      /* --- ORNAMENT DECORATOR --- */
+      .ornament {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        margin: 20px 0 40px 0;
+      }
+
+      .orn-line {
+        height: 1px;
+        width: 70px;
+        background-color: var(--gold-accent);
+      }
+
+      .orn-mark {
+        font-size: 1.2rem;
+        line-height: 1;
+      }
+
+      /* --- BUTTONS & PILLS --- */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 14px 28px;
+        border-radius: 3px;
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 0.95rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 1px solid transparent;
+        white-space: nowrap;
+      }
+
+      .btn-gold {
+        background-color: var(--gold-accent);
+        color: var(--olive-black);
+        border-color: var(--gold-accent);
+      }
+
+      .btn-gold:hover {
+        background-color: #A0824E;
+        border-color: #A0824E;
+        color: #FFFFFF;
+        box-shadow: 0 4px 15px rgba(184, 152, 96, 0.3);
+      }
+
+      .btn-outline-light {
+        background-color: transparent;
+        color: #FFFFFF;
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+
+      .btn-outline-light:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+        border-color: #FFFFFF;
+      }
+
+      .btn-outline-gold {
+        background-color: transparent;
+        color: var(--olive-black);
+        border-color: var(--gold-accent);
+      }
+
+      .btn-outline-gold:hover {
+        background-color: var(--gold-accent);
+        color: var(--olive-black);
+      }
+
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        background-color: rgba(46, 42, 30, 0.65);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 50px;
+        color: #FFFFFF;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+
+      /* --- STICKY NAVIGATION --- */
+      .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: var(--bg-greige);
+        border-bottom: 1px solid var(--color-border);
+        transition: background-color 0.3s ease;
+      }
+
+      .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+      }
+
+      .nav-logo {
+        display: flex;
+        align-items: baseline;
+        gap: 6px;
+      }
+
+      .logo-osada {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 1.25rem;
+        letter-spacing: 0.2em;
+        color: var(--olive-black);
+        text-transform: uppercase;
+      }
+
+      .logo-jager {
+        font-family: var(--font-heading);
+        font-weight: 600;
+        font-size: 1.85rem;
+        color: var(--olive-black);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        list-style: none;
+      }
+
+      .nav-link {
+        font-family: var(--font-body);
+        font-weight: 500;
+        font-size: 0.95rem;
+        letter-spacing: 0.05em;
+        color: var(--olive-black);
+        position: relative;
+        padding: 4px 0;
+      }
+
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 1px;
+        background-color: var(--gold-accent);
+        transition: width 0.3s ease;
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .nav-pill-gold {
+        border: 1px solid var(--gold-accent);
+        color: var(--olive-black);
+        padding: 8px 22px;
+        border-radius: 50px;
+        font-weight: 500;
+        font-size: 0.9rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+      }
+
+      .nav-pill-gold:hover {
+        background-color: var(--gold-accent);
+        color: #FFFFFF;
+      }
+
+      /* CSS-Only Mobile Hamburger Toggle with Animation */
+      .nav-toggle-checkbox {
+        display: none;
+      }
+
+      .nav-toggle-label {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 26px;
+        height: 18px;
+        cursor: pointer;
+        z-index: 1001;
+      }
+
+      .nav-toggle-label span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: var(--olive-black);
+        border-radius: 2px;
+        transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, background-color 0.3s ease;
+        transform-origin: center;
+      }
+
+      /* --- HERO SECTION --- */
+      .hero {
+        min-height: 100vh;
+        background: linear-gradient(180deg, rgba(46, 42, 30, 0.72) 0%, rgba(46, 42, 30, 0.88) 100%),
+                    url('https://i.ibb.co/8DNtWvsW/728427444-4038707596263376-4627458785522903135-n.jpg') center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #FFFFFF;
+        position: relative;
+        padding: 120px 20px 80px 20px;
+      }
+
+      .hero-content {
+        max-width: 860px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .hero-label {
+        font-family: var(--font-body);
+        font-weight: 500;
+        font-size: 0.95rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--gold-accent);
+      }
+
+      .hero-title-group {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .hero-title-osada {
+        font-family: var(--font-heading);
+        font-weight: 600;
+        font-size: clamp(3.5rem, 8vw, 6rem);
+        color: #FFFFFF;
+        line-height: 1;
+      }
+
+      .hero-title-jager {
+        font-family: var(--font-accent);
+        font-weight: 600;
+        font-size: clamp(4rem, 9vw, 7rem);
+        color: var(--gold-accent);
+        line-height: 0.9;
+      }
+
+      .hero-tagline {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+        line-height: 1.6;
+        color: #E0D8CA;
+        max-width: 720px;
+      }
+
+      .hero-chips {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin: 8px 0;
+      }
+
+      .hero-actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+      }
+
+      /* --- O NAS SECTION --- */
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 48px;
+        align-items: start;
+      }
+
+      .about-text p {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        color: var(--color-text);
+        margin-bottom: 28px;
+      }
+
+      .feature-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 1.05rem;
+        font-weight: 500;
+        padding: 12px 18px;
+        background-color: var(--bg-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 3px;
+        color: var(--olive-black);
+      }
+
+      .feature-item-icon {
+        font-size: 1.3rem;
+      }
+
+      .contact-card-dark {
+        background-color: var(--olive-black);
+        color: var(--bg-surface);
+        padding: 40px 32px;
+        border-radius: 3px;
+        border: 1px solid var(--olive-surface);
+        box-shadow: 0 12px 30px rgba(46, 42, 30, 0.15);
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .contact-card-title {
+        color: #FFFFFF;
+        font-size: 1.8rem;
+        border-bottom: 1px solid var(--olive-surface);
+        padding-bottom: 16px;
+      }
+
+      .contact-info-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .contact-icon {
+        font-size: 1.4rem;
+        color: var(--gold-accent);
+      }
+
+      .contact-details label {
+        display: block;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-muted);
+        margin-bottom: 2px;
+      }
+
+      .contact-details a, 
+      .contact-details span {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #FFFFFF;
+      }
+
+      .contact-details a:hover {
+        color: var(--gold-accent);
+      }
+
+      .private-booking-badge {
+        background-color: rgba(184, 152, 96, 0.15);
+        border: 1px solid var(--gold-accent);
+        border-radius: 3px;
+        padding: 14px;
+        text-align: center;
+        color: var(--gold-accent);
+        font-weight: 500;
+        font-size: 0.95rem;
+      }
+
+      /* --- DOMKI SHOWCASE SECTION --- */
+      .cabins-showcase {
+        background-color: var(--bg-greige);
+        border: 1px solid var(--color-border);
+        border-radius: 3px;
+        padding: 40px;
+        box-shadow: 0 6px 20px rgba(46, 42, 30, 0.03);
+      }
+
+      .cabins-unified-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .cabins-media-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+
+      .cabins-media-item {
+        position: relative;
+        border-radius: 3px;
+        overflow: hidden;
+        height: 320px;
+        border: 1px solid var(--color-border);
+      }
+
+      .cabins-media-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .cabins-showcase:hover .cabins-media-item img {
+        transform: scale(1.03);
+      }
+
+      .cabins-badge-overlay {
+        position: absolute;
+        bottom: 12px;
+        left: 12px;
+        background-color: rgba(46, 42, 30, 0.88);
+        backdrop-filter: blur(4px);
+        color: var(--gold-accent);
+        padding: 6px 14px;
+        border-radius: 50px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+      }
+
+      .cabins-unified-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .cabins-tagline-label {
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 0.85rem;
+        letter-spacing: 0.15em;
+        color: var(--gold-accent);
+        text-transform: uppercase;
+      }
+
+      .cabins-unified-info h3 {
+        font-size: 2.2rem;
+        color: var(--olive-black);
+        line-height: 1.2;
+      }
+
+      .cabins-unified-info p {
+        font-size: 1.08rem;
+        line-height: 1.8;
+        color: var(--color-text);
+      }
+
+      .prompt-specs-grid {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-top: 8px;
+      }
+
+      .prompt-specs-grid li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.92rem;
+        font-weight: 500;
+        color: var(--olive-black);
+        background-color: var(--bg-surface);
+        padding: 12px 14px;
+        border: 1px solid var(--color-border);
+        border-radius: 3px;
+      }
+
+      .spec-icon {
+        font-size: 1.1rem;
+      }
+
+      .cabins-summary-bar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-top: 40px;
+        background-color: var(--olive-black);
+        color: var(--bg-surface);
+        padding: 28px;
+        border-radius: 3px;
+        border: 1px solid var(--olive-surface);
+      }
+
+      .summary-item {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .summary-icon {
+        font-size: 1.8rem;
+      }
+
+      .summary-item strong {
+        display: block;
+        color: #FFFFFF;
+        font-size: 0.95rem;
+      }
+
+      .summary-item p {
+        color: var(--color-muted);
+        font-size: 0.82rem;
+        line-height: 1.3;
+      }
+
+      /* --- GALERIA SECTION --- */
+      /* CSS-Only Expandable Gallery */
+      .gallery-toggle-checkbox {
+        display: none;
+      }
+
+      .gallery-masonry {
+        column-count: 4;
+        column-gap: 16px;
+        margin-top: 10px;
+      }
+
+      .gallery-item {
+        break-inside: avoid;
+        margin-bottom: 16px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 3px;
+        border: 1px solid var(--color-border);
+        background-color: var(--bg-surface);
+        box-shadow: 0 4px 12px rgba(46, 42, 30, 0.04);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        content-visibility: auto;
+        contain-intrinsic-size: 0 260px;
+      }
+
+      .gallery-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(46, 42, 30, 0.1);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+
+      .gallery-item-hidden {
+        display: none;
+      }
+
+      /* Toggle behavior */
+      .gallery-toggle-checkbox:checked ~ .gallery-masonry .gallery-item-hidden {
+        display: block;
+      }
+
+      .gallery-actions {
+        text-align: center;
+        margin-top: 36px;
+      }
+
+      .gallery-toggle-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 14px 32px;
+        border-radius: 3px;
+        background-color: var(--olive-black);
+        color: var(--gold-accent);
+        border: 1px solid var(--olive-surface);
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 0.95rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .gallery-toggle-btn:hover {
+        background-color: var(--olive-surface);
+        color: #FFFFFF;
+        box-shadow: 0 6px 18px rgba(46, 42, 30, 0.15);
+      }
+
+      .gallery-toggle-checkbox:not(:checked) ~ .gallery-actions .btn-less {
+        display: none;
+      }
+
+      .gallery-toggle-checkbox:checked ~ .gallery-actions .btn-more {
+        display: none;
+      }
+
+      /* --- OPINIE SECTION --- */
+      .reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+        margin-top: 10px;
+      }
+
+      .review-card {
+        background-color: var(--bg-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 3px;
+        padding: 32px 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        box-shadow: 0 4px 16px rgba(46, 42, 30, 0.03);
+      }
+
+      .review-stars {
+        color: var(--gold-accent);
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+        letter-spacing: 2px;
+      }
+
+      .review-quote {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: var(--color-text);
+        font-style: italic;
+        margin-bottom: 24px;
+      }
+
+      .review-author {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-top: 1px solid var(--color-border);
+        padding-top: 16px;
+      }
+
+      .review-author-avatar {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: var(--olive-black);
+        color: var(--gold-accent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 0.85rem;
+      }
+
+      .review-author-info {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .review-author-name {
+        font-weight: 600;
+        font-size: 0.95rem;
+        color: var(--olive-black);
+      }
+
+      .review-source {
+        font-size: 0.8rem;
+        color: var(--color-muted);
+      }
+
+      .reviews-fb-action {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .fb-reviews-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--olive-black);
+        font-weight: 600;
+        font-size: 1rem;
+        border-bottom: 1px solid var(--gold-accent);
+        padding-bottom: 4px;
+      }
+
+      .fb-reviews-link:hover {
+        color: var(--gold-accent);
+      }
+
+      /* --- KONTAKT SECTION --- */
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: stretch;
+      }
+
+      .contact-info-panel {
+        background-color: var(--bg-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 3px;
+        padding: 40px 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 28px;
+      }
+
+      .contact-rows-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .contact-row-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .contact-row-icon {
+        font-size: 1.4rem;
+        color: var(--gold-accent);
+        line-height: 1.2;
+      }
+
+      .contact-row-text label {
+        display: block;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--color-muted);
+        margin-bottom: 2px;
+      }
+
+      .contact-row-text a, 
+      .contact-row-text span {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--olive-black);
+      }
+
+      .contact-row-text a:hover {
+        color: var(--gold-accent);
+      }
+
+      .contact-map-wrapper {
+        border-radius: 3px;
+        overflow: hidden;
+        border: 1px solid var(--color-border);
+        min-height: 380px;
+      }
+
+      .contact-map-wrapper iframe {
+        width: 100%;
+        height: 100%;
+        min-height: 380px;
+        border: 0;
+      }
+
+      /* --- FOOTER --- */
+      .footer {
+        background-color: var(--olive-black);
+        color: var(--bg-surface);
+        padding: 60px 0 30px 0;
+        border-top: 1px solid var(--olive-surface);
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 48px;
+      }
+
+      .footer-brand {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .footer-logo-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .footer-favicon {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid var(--gold-accent);
+      }
+
+      .footer-wordmark {
+        display: flex;
+        align-items: baseline;
+        gap: 6px;
+      }
+
+      .footer-wordmark .logo-osada {
+        color: #FFFFFF;
+        font-size: 1.1rem;
+      }
+
+      .footer-wordmark .logo-jager {
+        color: var(--gold-accent);
+        font-size: 1.6rem;
+      }
+
+      .footer-description {
+        color: #E0D8CA;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        max-width: 360px;
+      }
+
+      .footer-col-title {
+        color: #FFFFFF;
+        font-size: 1.1rem;
+        font-family: var(--font-body);
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      .footer-links {
+        list-style: none;
+        display: flex;
+        flex-direction: flex-col;
+        gap: 10px;
+      }
+
+      .footer-links li a {
+        color: #E0D8CA;
+        font-size: 0.95rem;
+      }
+
+      .footer-links li a:hover {
+        color: var(--gold-accent);
+      }
+
+      .footer-bottom {
+        border-top: 1px solid var(--olive-surface);
+        padding-top: 24px;
+        text-align: center;
+        font-size: 0.85rem;
+        color: var(--color-muted);
+      }
+
+      /* --- RESPONSIVE BREAKPOINTS --- */
+      @media (max-width: 992px) {
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .cabins-unified-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .cabins-summary-bar {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .gallery-masonry {
+          column-count: 3;
+        }
+
+        .reviews-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        section {
+          padding: 64px 0;
+        }
+
+        .nav-toggle-label {
+          display: flex;
+        }
+
+        .nav-links {
+          display: flex;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background-color: var(--bg-greige);
+          border-bottom: 1px solid var(--color-border);
+          padding: 0 20px;
+          flex-direction: column;
+          align-items: stretch;
+          gap: 16px;
+          box-shadow: 0 10px 25px rgba(46, 42, 30, 0.12);
+          opacity: 0;
+          visibility: hidden;
+          max-height: 0;
+          overflow: hidden;
+          transform: translate3d(0, -16px, 0);
+          will-change: transform, opacity, max-height;
+          backface-visibility: hidden;
+          transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), max-height 0.35s ease, padding 0.3s ease, visibility 0.3s;
+        }
+
+        .nav-toggle-checkbox:checked ~ .nav-links {
+          opacity: 1;
+          visibility: visible;
+          max-height: 420px;
+          padding: 24px 20px;
+          transform: translate3d(0, 0, 0);
+        }
+
+        /* Animated Hamburger Icon Transfomation */
+        .nav-toggle-checkbox:checked + .nav-toggle-label span:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+
+        .nav-toggle-checkbox:checked + .nav-toggle-label span:nth-child(2) {
+          opacity: 0;
+          transform: scaleX(0);
+        }
+
+        .nav-toggle-checkbox:checked + .nav-toggle-label span:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+
+        .nav-link {
+          text-align: center;
+          padding: 10px 0;
+        }
+
+        .nav-pill-gold {
+          text-align: center;
+        }
+
+        .gallery-masonry {
+          column-count: 2;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .cabins-media-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .prompt-specs-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .cabins-summary-bar {
+          grid-template-columns: 1fr;
+        }
+
+        .gallery-masonry {
+          column-count: 1;
+        }
+
+        .hero-actions {
+          flex-direction: column;
+          width: 100%;
+        }
+
+        .hero-actions .btn {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- 2. NAVIGATION (Sticky) -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="nav-logo" aria-label="Osada Jager Strona Główna">
+          <span class="logo-osada">OSADA</span>
+          <span class="logo-jager">Jager</span>
+        </a>
+
+        <!-- CSS Hamburger Toggle -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Otwórz Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <ul class="nav-links">
+          <li><a href="#o-nas" class="nav-link">O Nas</a></li>
+          <li><a href="#domki" class="nav-link">Domki</a></li>
+          <li><a href="#galeria" class="nav-link">Galeria</a></li>
+          <li><a href="#opinie" class="nav-link">Opinie</a></li>
+          <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+          <li><a href="#kontakt" class="nav-pill-gold">Rezerwuj</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 3. HERO SECTION -->
+    <header class="hero">
+      <div class="hero-content">
+        <span class="hero-label">Podhale · Bańska Wyżna · Tatry</span>
+        
+        <div class="hero-title-group">
+          <span class="hero-title-osada">Osada</span>
+          <span class="hero-title-jager">Jager</span>
+        </div>
+
+        <p class="hero-tagline">
+          Odpocznij od miejskiego zgiełku w dwóch nowoczesnych domkach z zachwycającym widokiem na góry.
+        </p>
+
+        <div class="hero-chips">
+          <span class="chip">🏠 Dwa nowoczesne domki</span>
+          <span class="chip">🏔️ Widok na Tatry</span>
+          <span class="chip">🧖 Jacuzzi i sauna</span>
+          <span class="chip">👨‍👩‍👧‍👦 Przyjazne rodzinom</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="tel:787361760" class="btn btn-gold">REZERWUJ: 787 361 760</a>
+          <a href="#galeria" class="btn btn-outline-light">GALERIA</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 4. O NAS SECTION -->
+    <section id="o-nas">
+      <div class="container">
+        <h2>O Naszej Osadzie</h2>
+        <p class="section-subtitle">Spokój, Górski Klimat & Rodzinny Odpoczynek</p>
+        
+        <div class="ornament">
+          <span class="orn-line"></span>
+          <span class="orn-mark">🏔️</span>
+          <span class="orn-line"></span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Nasze domki to miejsce przyjazne rodzinom z dziećmi w każdym wieku. Plac zabaw, gry planszowe i przestronne wnętrza sprawiają, że najmłodsi Goście na pewno nie będą się nudzić, a dorośli będą mogli naprawdę odpocząć.
+            </p>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-item-icon">🏠</span>
+                <span>Dwa nowoczesne domki o wysokim standardzie</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-item-icon">🏔️</span>
+                <span>Zachwycający, panoramiczny widok na najwyższe szczyty Tatr</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-item-icon">🧖</span>
+                <span>Prywatna strefa relaksu: gorąca balia z jacuzzi oraz sauna fińska</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-item-icon">🎲</span>
+                <span>Kącik dla najmłodszych: plac zabaw oraz bogaty zestaw gier planszowych</span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-item-icon">👨‍👩‍👧‍👦</span>
+                <span>Komfrotowe wnętrza w pełni przystosowane dla rodzin z dziećmi</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-card-dark">
+            <h3 class="contact-card-title">Rezerwacje & Kontakt</h3>
+            
+            <div class="contact-info-row">
+              <span class="contact-icon">📞</span>
+              <div class="contact-details">
+                <label>Telefon</label>
+                <a href="tel:787361760">787 361 760</a>
+              </div>
+            </div>
+
+            <div class="contact-info-row">
+              <span class="contact-icon">✉️</span>
+              <div class="contact-details">
+                <label>E-mail</label>
+                <a href="mailto:kontakt@osadajager.com">kontakt@osadajager.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-row">
+              <span class="contact-icon">📍</span>
+              <div class="contact-details">
+                <label>Lokalizacja</label>
+                <span>Bańska Wyżna 355, 34-424</span>
+              </div>
+            </div>
+
+            <div class="private-booking-badge">
+              💬 Rezerwacja w wiadomości prywatnej
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOMKI SECTION -->
+    <section id="domki" class="bg-surface">
+      <div class="container">
+        <h2>Dwa Nowoczesne Domki</h2>
+        <p class="section-subtitle">Komfort, Przestrzeń & Zachwycający Widok na Tatry</p>
+
+        <div class="ornament">
+          <span class="orn-line"></span>
+          <span class="orn-mark">🌲</span>
+          <span class="orn-line"></span>
+        </div>
+
+        <div class="cabins-showcase">
+          <div class="cabins-unified-grid">
+            <div class="cabins-media-grid">
+              <div class="cabins-media-item">
+                <img src="https://i.ibb.co/zMWqgBY/osada-jager-1.jpg" alt="Nowoczesne domki w Osadzie Jager z widokiem na góry" loading="lazy" decoding="async">
+                <span class="cabins-badge-overlay">Widok na Tatry</span>
+              </div>
+              <div class="cabins-media-item">
+                <img src="https://i.ibb.co/rR1DLnv0/osada-jager-2.jpg" alt="Strefa jacuzzi i sauny w Osadzie Jager" loading="lazy" decoding="async">
+                <span class="cabins-badge-overlay">Jacuzzi & Sauna</span>
+              </div>
+            </div>
+
+            <div class="cabins-unified-info">
+              <span class="cabins-tagline-label">Podhale · Bańska Wyżna</span>
+              <h3>Przestronne, Nowoczesne Domki w Górach</h3>
+              <p>
+                Osada Jager oferuje dwa nowoczesne domki w Bańskiej Wyżnej z zachwycającym widokiem na góry. To idealne miejsce na odpoczynek od miejskiego zgiełku. Przestronne wnętrza, strefa relaksu z jacuzzi i sauną oraz udogodnienia dla rodzin zapewniają niezapomniany pobyt na Podhalu.
+              </p>
+
+              <ul class="prompt-specs-grid">
+                <li><span class="spec-icon">🏠</span> <span>Dwa nowoczesne domki</span></li>
+                <li><span class="spec-icon">🏔️</span> <span>Widok na Tatry</span></li>
+                <li><span class="spec-icon">🧖</span> <span>Jacuzzi i sauna</span></li>
+                <li><span class="spec-icon">👨‍👩‍👧‍👦</span> <span>Przyjazne rodzinom z dziećmi</span></li>
+                <li><span class="spec-icon">🎲</span> <span>Plac zabaw i gry planszowe</span></li>
+                <li><span class="spec-icon">💬</span> <span>Rezerwacja w wiadomości prywatnej</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Summary Bar strictly matching prompt -->
+          <div class="cabins-summary-bar">
+            <div class="summary-item">
+              <span class="summary-icon">🏠</span>
+              <div>
+                <strong>Dwa Nowoczesne Domki</strong>
+                <p>Przestronne wnętrza w Bańskiej Wyżnej</p>
+              </div>
+            </div>
+            <div class="summary-item">
+              <span class="summary-icon">🏔️</span>
+              <div>
+                <strong>Widok na Tatry</strong>
+                <p>Zachwycająca panorama gór</p>
+              </div>
+            </div>
+            <div class="summary-item">
+              <span class="summary-icon">🧖</span>
+              <div>
+                <strong>Jacuzzi & Sauna</strong>
+                <p>Prywatny relaks i odprężenie</p>
+              </div>
+            </div>
+            <div class="summary-item">
+              <span class="summary-icon">👨‍👩‍👧‍👦</span>
+              <div>
+                <strong>Przyjazne Rodzinom</strong>
+                <p>Plac zabaw i gry planszowe</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. GALERIA SECTION (CSS-Only Expandable) -->
+    <section id="galeria">
+      <div class="container">
+        <h2>Galeria Zdjęć</h2>
+        <p class="section-subtitle">Zobacz Urok Osady Jager oraz Piękno Bańskiej Wyżnej</p>
+
+        <div class="ornament">
+          <span class="orn-line"></span>
+          <span class="orn-mark">📸</span>
+          <span class="orn-line"></span>
+        </div>
+
+        <!-- Checkbox Controller -->
+        <input type="checkbox" id="gallery-toggle" class="gallery-toggle-checkbox">
+
+        <!-- Masonry Grid -->
+        <div class="gallery-masonry">
+          <!-- First 8 Visible Photos -->
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/zMWqgBY/osada-jager-1.jpg" alt="Osada Jager - Widok na Tatry z domku" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/rR1DLnv0/osada-jager-2.jpg" alt="Osada Jager - Gorące jacuzzi pod gwiazdami" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/kg7LN97h/osada-jager-3.jpg" alt="Osada Jager - Strefa sauna i relaksu" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/HpFyPkrS/osada-jager-4.jpg" alt="Osada Jager - Nowoczesny salon z kominkiem" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/0ym7mWcL/osada-jager-5.jpg" alt="Osada Jager - Sypialnia w klimacie podhalańskim" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/Z6SCw2Gm/osada-jager-6.jpg" alt="Osada Jager - Plac zabaw dla dzieci w ogrodzie" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/DHTfJcsj/osada-jager-7.jpg" alt="Osada Jager - Elewacja domku o zmierzchu" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/604SwXkq/osada-jager-8.jpg" alt="Osada Jager - Taras z widokiem na zaśnieżone góry" loading="lazy" decoding="async">
+          </div>
+
+          <!-- Hidden 7 Photos (Expandable via CSS) -->
+          <div class="gallery-item gallery-item-hidden">
+            <img src="https://i.ibb.co/8Dk4yFCq/osada-jager-9.jpg" alt="Osada Jager - Kuchnia i jadalnia w domku" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item gallery-item-hidden">
+            <img src="https://i.ibb.co/G3k9qvnk/osada-jager-10.jpg" alt="Osada Jager - Detale architektury drewnianej" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item gallery-item-hidden">
+            <img src="https://i.ibb.co/7NGxPTFD/osada-jager-11.jpg" alt="Osada Jager - Panoramiczne okna w salonie" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item gallery-item-hidden">
+            <img src="https://i.ibb.co/WWTMWmJh/osada-jager-12.jpg" alt="Osada Jager - Sauna fińska gotowa do seansu" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item gallery-item-hidden">
+            <img src="https://i.ibb.co/JRhsHjs8/osada-jager-13.jpg" alt="Osada Jager - Gry planszowe i strefa zabawy" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item gallery-item-hidden">
+            <img src="https://i.ibb.co/fzzXShD3/osada-jager-14.jpg" alt="Osada Jager - Zimowy pejzaż wokół Osady" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item gallery-item-hidden">
+            <img src="https://i.ibb.co/V8NZD24/osada-jager-15.jpg" alt="Osada Jager - Oświetlenie osady nocą" loading="lazy" decoding="async">
+          </div>
+        </div>
+
+        <!-- Toggle Button Label -->
+        <div class="gallery-actions">
+          <label for="gallery-toggle" class="gallery-toggle-btn">
+            <span class="btn-more">Zobacz Pełną Galerię (15 zdjęć) 📸</span>
+            <span class="btn-less">Pokaż Mniej ⬆️</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. OPINIE SECTION -->
+    <section id="opinie" class="bg-surface">
+      <div class="container">
+        <h2>Opinie Naszych Gości</h2>
+        <p class="section-subtitle">Co Mówią Osoby, Które Nas Odwiedziły</p>
+
+        <div class="ornament">
+          <span class="orn-line"></span>
+          <span class="orn-mark">⭐</span>
+          <span class="orn-line"></span>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Opinia 1 -->
+          <article class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">
+                "Rewelacyjne miejsce na odpocznij, eleganckie domki, klimat górski i widoki sztos. A gospodarze bardzo gościnni."
+              </p>
+            </div>
+            <div class="review-author">
+              <div class="review-author-avatar">G</div>
+              <div class="review-author-info">
+                <span class="review-author-name">Zadowolony Gość</span>
+                <span class="review-source">Opinia z Facebooka</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Opinia 2 -->
+          <article class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">
+                "Domki są nowoczesne i świetnie wyposażone, idealne dla rodzin z małymi dziećmi. Widoki są przepiękne, a pobyt w takim miejscu to czysta przyjemność!"
+              </p>
+            </div>
+            <div class="review-author">
+              <div class="review-author-avatar">R</div>
+              <div class="review-author-info">
+                <span class="review-author-name">Rodzina z Dziećmi</span>
+                <span class="review-source">Opinia z Facebooka</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Opinia 3 -->
+          <article class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">
+                "Bardzo polecam Osada Jager, domki na bardzo wysokim standardzie, jacuzzi i sauna z widokami na zaśnieżone Tatry — coś pięknego."
+              </p>
+            </div>
+            <div class="review-author">
+              <div class="review-author-avatar">M</div>
+              <div class="review-author-info">
+                <span class="review-author-name">Młoda Para</span>
+                <span class="review-source">Opinia z Facebooka</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="reviews-fb-action">
+          <a href="https://www.facebook.com/profile.php?id=61571217822557&sk=reviews" target="_blank" rel="noopener noreferrer" class="fb-reviews-link">
+            Przeczytaj więcej opinii na naszym profilu Facebook ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. KONTAKT SECTION -->
+    <section id="kontakt">
+      <div class="container">
+        <h2>Kontakt & Rezerwacje</h2>
+        <p class="section-subtitle">Zarezerwuj Swój Wymarzony Pobyt na Podhalu</p>
+
+        <div class="ornament">
+          <span class="orn-line"></span>
+          <span class="orn-mark">📍</span>
+          <span class="orn-line"></span>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column -->
+          <div class="contact-info-panel">
+            <div class="contact-rows-list">
+              <div class="contact-row-item">
+                <span class="contact-row-icon">📞</span>
+                <div class="contact-row-text">
+                  <label>Telefon Bezpośredni</label>
+                  <a href="tel:787361760">787 361 760</a>
+                </div>
+              </div>
+
+              <div class="contact-row-item">
+                <span class="contact-row-icon">✉️</span>
+                <div class="contact-row-text">
+                  <label>Adres E-mail</label>
+                  <a href="mailto:kontakt@osadajager.com">kontakt@osadajager.com</a>
+                </div>
+              </div>
+
+              <div class="contact-row-item">
+                <span class="contact-row-icon">📍</span>
+                <div class="contact-row-text">
+                  <label>Adres Osady</label>
+                  <span>Bańska Wyżna 355, 34-424 Bańska Wyżna</span>
+                </div>
+              </div>
+
+              <div class="contact-row-item">
+                <span class="contact-row-icon">💬</span>
+                <div class="contact-row-text">
+                  <label>Social Media / Rezerwacja</label>
+                  <a href="https://www.facebook.com/profile.php?id=61571217822557" target="_blank" rel="noopener noreferrer">
+                    Facebook: Osada Jager ↗
+                  </a>
+                </div>
+              </div>
+
+              <div class="private-booking-badge" style="text-align: left;">
+                ℹ️ <strong>Informacja o rezerwacji:</strong> Rezerwacja miejsc odbywa się poprzez wiadomość prywatną lub telefonicznie.
+              </div>
+            </div>
+
+            <a href="tel:787361760" class="btn btn-gold" style="width: 100%;">
+              ZADZWOŃ: 787 361 760
+            </a>
+          </div>
+
+          <!-- Right Column: Google Maps Embed -->
+          <div class="contact-map-wrapper">
+            <iframe 
+              title="Mapa dojazdu do Osada Jager w Bańskiej Wyżnej"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10385.1234!2d19.9880!3d49.3880!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715f33333333333%3A0x0!2zQmHFg2thIFd5xbxuYSAzNTUsIDM0LTQyNCBCYcWEa2EgV3nFv25h!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand & Desc -->
+          <div class="footer-brand">
+            <div class="footer-logo-row">
+              <img src="https://i.ibb.co/jZvWZLLP/471683524-122107848086698509-4073205646031298830-n.jpg" alt="Logo Osada Jager" class="footer-favicon">
+              <div class="footer-wordmark">
+                <span class="logo-osada">OSADA</span>
+                <span class="logo-jager">Jager</span>
+              </div>
+            </div>
+            <p class="footer-description">
+              Dwa nowoczesne domki w sercu Podhala z zachwycającą panoramą Tatr, strefą jacuzzi, sauną i atrakcjami dla całej rodziny.
+            </p>
+          </div>
+
+          <!-- Col 2: Navigation -->
+          <div>
+            <h4 class="footer-col-title">Nawigacja</h4>
+            <ul class="footer-links">
+              <li><a href="#o-nas">O Naszej Osadzie</a></li>
+              <li><a href="#domki">Luksusowe Domki</a></li>
+              <li><a href="#galeria">Galeria Zdjęć (15)</a></li>
+              <li><a href="#opinie">Opinie Gości</a></li>
+              <li><a href="#kontakt">Kontakt & Rezerwacje</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Contact Info -->
+          <div>
+            <h4 class="footer-col-title">Kontakt</h4>
+            <ul class="footer-links">
+              <li><a href="tel:787361760">📞 787 361 760</a></li>
+              <li><a href="mailto:kontakt@osadajager.com">✉️ kontakt@osadajager.com</a></li>
+              <li><span>📍 Bańska Wyżna 355, 34-424</span></li>
+              <li><a href="https://www.facebook.com/profile.php?id=61571217822557" target="_blank" rel="noopener noreferrer">🌐 Facebook: Osada Jager</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Osada Jager. Wszelkie prawa zastrzeżone. Podhale · Bańska Wyżna · Tatry</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
